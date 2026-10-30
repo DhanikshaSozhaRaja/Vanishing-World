@@ -63,24 +63,7 @@ This is intended to reduce the computational cost of searching larger game board
 
 Lower-level boards support multiple search algorithms for comparison, while higher-level boards focus on Greedy Best-First Search.
 
-## 7. Project Structure
-
-```text
-vanishing_world/
-│
-├── main.py
-├── rules.py
-├── ai_search.py
-├── compare_algorithms.py
-│
-├── assets/
-│
-└── README.md
-```
-
-*Note: The exact project structure may vary depending on the files and assets currently present.*
-
-## 8. How to Run the Project
+## 7. How to Run the Project
 
 ### Step 1: Install Python
 
@@ -108,7 +91,7 @@ If using the project's virtual environment on Windows:
 .\.venv\Scripts\python.exe main.py
 ```
 
-## 9. Controls
+## 8. Controls
 
 | Key | Function |
 |---|---|
@@ -118,15 +101,13 @@ If using the project's virtual environment on Windows:
 | C | Open algorithm comparison / return from comparison |
 | Close Button | Close the game or instruction screen |
 
-*Controls may vary slightly depending on the current game implementation.*
-
-## 10. Project Objective
+## 9. Project Objective
 
 The main objective of this project is to understand and demonstrate how different AI search strategies solve problems involving pathfinding, state-space exploration, heuristic evaluation, and decision-making.
 
 The game provides a visual way to understand the strengths and limitations of different search algorithms.
 
-## 11. Future Enhancements
+## 10. Future Enhancements
 
 - Improve AI decision-making for larger boards.
 - Add more advanced search strategies.
