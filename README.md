@@ -91,15 +91,39 @@ If using the project's virtual environment on Windows:
 .\.venv\Scripts\python.exe main.py
 ```
 
-## 8. Controls
+## 8. Game Controls
 
-| Key | Function |
-|---|---|
-| Arrow Keys | Move the player |
-| N | Generate the next level |
-| R | Restart the level |
-| C | Open algorithm comparison / return from comparison |
-| Close Button | Close the game or instruction screen |
+The following controls are available in Vanishing World:
+
+| Key / Input          | Function                                                                   |
+| -------------------- | -------------------------------------------------------------------------- |
+| Arrow Keys (↑ ↓ ← →) | Move the player in the selected direction.                                 |
+| 1                    | Start AI using Breadth-First Search (BFS).                                 |
+| 2                    | Start AI using Depth-First Search (DFS).                                   |
+| 3                    | Start AI using Iterative Deepening DFS (IDDFS).                            |
+| 4                    | Start AI using Greedy Best-First Search.                                   |
+| 5                    | Start AI using A\* Search.                                                 |
+| H                    | Request an AI hint.                                                        |
+| R                    | Restart the current level.                                                 |
+| N                    | Move to the next level (when the current level is won or has no solution). |
+| C                    | Open or close the AI algorithm comparison screen after winning a level.    |
+| P                    | Pause or resume the game.                                                  |
+| V                    | Enter AI vs Human challenge mode.                                          |
+| Q                    | Exit AI vs Human challenge mode.                                           |
+| F1                   | Set difficulty to Easy.                                                    |
+| F2                   | Set difficulty to Medium.                                                  |
+| F3                   | Set difficulty to Hard.                                                    |
+| ESC                  | Close the challenge warning popup.                                         |
+| Mouse Click          | Interact with on-screen buttons and menus.                                 |
+
+### Additional Notes
+
+- AI algorithm shortcuts (1–5), hints (H), and normal movement are disabled or restricted in AI vs Human mode.
+- In AI vs Human mode, the AI and human take turns making moves.
+- The next-level option is available only after winning or when the generated level has no solution.
+- The comparison screen is available after winning a level outside AI vs Human mode.
+
+Important: These controls are based on the event-handling code you shared. The exact behavior of mouse buttons depends on the menu and button-handling functions elsewhere in `main.py`.
 
 ## 9. Project Objective
 
